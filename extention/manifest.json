@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Checkbox Unchecker",
+    "version": "1.0",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://studio.youtube.com/channel/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
